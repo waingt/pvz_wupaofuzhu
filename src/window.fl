@@ -1,0 +1,118 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0305
+header_name {.h}
+code_name {.cxx}
+class MyWindow {open
+} {
+  Function {make_window()} {open
+  } {
+    Fl_Window {} {
+      label {无炮辅助} open
+      xywh {454 123 330 550} type Double hide resizable
+    } {
+      Fl_Box {} {
+        label {第%d波}
+        xywh {10 10 80 30}
+      }
+      Fl_Check_Button {} {
+        label {总在最前}
+        xywh {100 10 90 30} down_box DOWN_BOX
+      }
+      Fl_Button {} {
+        label {关于}
+        xywh {250 10 70 30}
+      }
+      Fl_Box {} {
+        label {刷新倒计时：}
+        xywh {10 50 80 30}
+      }
+      Fl_Progress {} {
+        label 200
+        xywh {100 50 220 30}
+      }
+      Fl_Box {} {
+        label {波长：}
+        xywh {10 90 80 30}
+      }
+      Fl_Progress {} {
+        label 200
+        xywh {100 90 220 30}
+      }
+      Fl_Check_Button {} {
+        label {自动收集}
+        xywh {10 130 90 30} down_box DOWN_BOX
+      }
+      Fl_Check_Button {} {
+        label {樱桃秒炸开盒}
+        xywh {100 130 110 30} down_box DOWN_BOX
+      }
+      Fl_Check_Button {} {
+        label {自动存冰}
+        xywh {210 130 90 30} down_box DOWN_BOX
+      }
+      Fl_Input {} {
+        label {存冰位：}
+        xywh {70 160 250 30}
+      }
+      Fl_Check_Button {} {
+        label {刷新自动点冰}
+        xywh {10 200 110 30} down_box DOWN_BOX
+      }
+      Fl_Box {} {
+        label {冰总CD：}
+        xywh {120 200 70 30}
+      }
+      Fl_Progress {} {
+        label {??}
+        xywh {190 200 130 30} box SHADOW_BOX
+      }
+      Fl_Check_Button {} {
+        label {自动修补南瓜}
+        xywh {10 230 110 30} down_box DOWN_BOX
+      }
+      Fl_Box {} {
+        label {破损率：}
+        xywh {120 230 70 30}
+      }
+      Fl_Progress {} {
+        label {??%}
+        xywh {190 230 130 30}
+      }
+      Fl_Box {} {
+        label {修补阈值}
+        xywh {10 270 70 30}
+      }
+      Fl_Value_Slider {} {
+        xywh {80 270 150 30} type {Horz Knob} maximum 4000 step 1 value 2000
+      }
+      Fl_Check_Button {} {
+        label {自动阈值}
+        xywh {230 270 80 30} down_box DOWN_BOX value 1
+      }
+      Fl_Check_Button {} {
+        label {点击即发炮}
+        xywh {10 310 100 30} down_box DOWN_BOX
+      }
+      Fl_Check_Button {} {
+        label {点击即对称发炮}
+        xywh {110 310 120 30} down_box DOWN_BOX
+      }
+      Fl_Check_Button {} {
+        label {女仆秘籍}
+        xywh {230 310 80 30} down_box DOWN_BOX
+      }
+      Fl_Text_Display {} {
+        label {刷怪类型}
+        xywh {10 360 140 70}
+      }
+      Fl_Text_Display {} {
+        label {植物残血}
+        xywh {160 360 160 70}
+      }
+      Fl_Text_Display {} {
+        label Console
+        xywh {10 450 310 90} resizable
+      }
+    }
+  }
+}
