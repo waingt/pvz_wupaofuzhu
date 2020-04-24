@@ -8,7 +8,8 @@ namespace window {
 		wave = new Label<>(10, 10, 80, 30, "第？波");
 		(new Fl_Check_Button(100, 10, 90, 30, "总在最前"))
 			->callback([](Fl_Widget* w) {SetWindowPos(win->hwnd, (HWND)(((Fl_Check_Button*)w)->value() - 2), 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE); });
-		new Fl_Button(250, 10, 70, 30, "关于");
+		(new Fl_Button(250, 10, 70, 30, "关于"))
+			->callback([](Fl_Widget* w) {win->info("Get source code at https://github.com/waingt/pvz_wupaofuzhu"); });
 
 		new Fl_Box(10, 50, 80, 30, "刷新倒计时");
 		pgs_countdown = new ProgressBar<>(100, 50, 220, 30, "??");
