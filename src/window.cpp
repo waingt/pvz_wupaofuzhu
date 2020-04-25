@@ -52,7 +52,7 @@ namespace window {
 		t->value(1);
 		t->callback([](Fl_Widget* w) {pvz::auto_threshold == ((Fl_Check_Button*)w)->value(); }); }
 
-		(new Fl_Check_Button(10, 310, 220, 30, "中键点击即发炮(双击对称发炮"))
+		(new Fl_Check_Button(10, 310, 220, 30, "中键单击即发炮(右键双击对称发炮"))
 			->callback(pvz::cb_change_hook);
 		(new Fl_Check_Button(230, 310, 80, 30, "女仆秘籍"))
 			->callback([](Fl_Widget* w) {pvz::maid_cheat_on = ((Fl_Check_Button*)w)->value(); });
